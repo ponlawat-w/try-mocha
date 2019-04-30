@@ -1,0 +1,26 @@
+{
+  "name": "try-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node --preset babel-preset-env",
+    "test": "mocha --require babel-core/register --require babel-polyfill --recursive ./test/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  },
+  "babel": {
+    "presets": ["env"]
+  }
+}
